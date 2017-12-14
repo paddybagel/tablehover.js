@@ -1,0 +1,254 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	td, th{
+		text-align: center;
+	    min-width: 75px;
+	}
+	.Main{
+		background-color: white !important;
+	}
+	.TextRight{
+		text-align: right;
+	}
+	.TextLeft{
+		text-align: left;
+	}
+	h2, h3, h4 {
+		margin: 0;
+	}
+	span.fip-box.Blue i {
+		color: #03648D;
+	}
+</style>
+<script>
+$(document).ready(function(){
+	
+	$('.HoverRow').hover( function() {
+		$( this ).css('backgroundColor', '#EEE');
+	}, function() {
+		$( this ).css('backgroundColor', '');
+	});
+	
+	$('.ColumnHover').hover( function() {
+		var column_number = $( this ).data('column');
+		$('*[data-column="' + column_number + '"]').css('backgroundColor', '#EEE');
+		if (!$( this ).hasClass('SubHeader')){
+			$( this ).css({backgroundColor: '#03648D'});
+			$( this ).find('i.fa').css({color: 'white'})
+		}
+	}, function() {
+		var column_number = $( this ).data('column');
+		$('*[data-column="' + column_number + '"]').css('backgroundColor', '');
+		$( this ).find('i.fa').css({color: ''})
+	});
+});
+</script>
+
+<table class="tableizer-table">
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<th colspan="3" class="Main"><h2>Private Cloud</h2></th>
+<th colspan="4" class="Main"><h2>Public Cloud</h2></th>
+</tr>
+<tr>
+<td class="Main"><h3>Feature</h3></td>
+<td class="Main"><h3>Capability</h3></td>
+<td class="ColumnHover SubHeader" data-column="1">Foundation</td>
+<td class="ColumnHover SubHeader" data-column="2">Standard</td>
+<td class="ColumnHover SubHeader" data-column="3">Enterprise</td>
+<td class="ColumnHover SubHeader" data-column="4">P</td>
+<td class="ColumnHover SubHeader" data-column="5">Kiosk</td>
+<td class="ColumnHover SubHeader" data-column="6">Plan1</td>
+<td class="ColumnHover SubHeader" data-column="7">Plan 2</td>
+</tr>
+<tr class="HoverRow" data-row="1">
+<td class="Main"><h4>Apps</h4></td>
+<td class="TextRight">App Catalog and Marketplace</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="2">
+<td rowspan="4" class="Main"><h4>Collaboration</h4></td>
+<td class="TextRight">Team Sites</td>
+<td class="ColumnHover" data-column="1"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="3">
+<td class="TextRight">Work Management</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="4">
+<td class="TextRight"><b>Social</b></td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="5">
+<td class="TextRight">External Sharing</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3">&nbsp;</td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="6">
+<td rowspan="3" class="Main"><h4>Search</h4></td>
+<td class="TextRight">Basic Search</td>
+<td class="ColumnHover" data-column="1"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="7">
+<td class="TextRight">Standard Search*</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="8">
+<td class="TextRight">Enterprice Search*</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7">&nbsp;</td>
+</tr>
+<tr class="HoverRow" data-row="9">
+<td rowspan="3" class="Main"><h4>Content Management</h4></td>
+<td class="TextRight">Content Management</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7">&nbsp;</td>
+</tr>
+<tr class="HoverRow" data-row="10">
+<td class="TextRight">Records Management</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7">&nbsp;</td>
+</tr>
+<tr class="HoverRow" data-row="11">
+<td class="TextRight">eDiscovery, Compliance</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="12">
+<td rowspan="2" class="Main"><h4>Business Intelligence</h4></td>
+<td class="TextRight">Excel Services, PowerPivot, Power View</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2">*</i></span></td>
+</tr>
+<tr class="HoverRow" data-row="13">
+<td class="TextRight">Scorecards and Dashboards</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7">&nbsp;</td>
+</tr>
+<tr class="HoverRow" data-row="14">
+<td rowspan="5" class="Main"><h4>Business Solutions</h4></td>
+<td class="TextRight">Access Services</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="15">
+<td class="TextRight">Visio Services</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="16">
+<td class="TextRight">Form-based Applications*</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2">&nbsp;</td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="17">
+<td class="TextRight">SharePoiny 2013 Workflow Manager</td>
+<td class="ColumnHover" data-column="1">&nbsp;</td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="5"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="6"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+<tr class="HoverRow" data-row="18">
+<td class="TextRight">Business Connectivity Services (bCS)**</td>
+<td class="ColumnHover" data-column="1"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="2"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="3"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+<td class="ColumnHover" data-column="4">&nbsp;</td>
+<td class="ColumnHover" data-column="5">&nbsp;</td>
+<td class="ColumnHover" data-column="6">&nbsp;</td>
+<td class="ColumnHover" data-column="7"><span class="fip-box Blue" title="Check"><i data-fip-value="fa fa-check2" class="fa fa-check2"></i></span></td>
+</tr>
+</tbody></table>
